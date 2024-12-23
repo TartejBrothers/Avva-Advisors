@@ -23,7 +23,15 @@ html {
   font-family: "Founders Grotesk";
 }
 button {
+  transition: all 0.3s ease;
   cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  transform: translateY(-2px);
+  scale: 1.05;
 }
 input:focus {
   outline: none;
