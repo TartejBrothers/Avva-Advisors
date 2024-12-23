@@ -1,0 +1,67 @@
+.homeheader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh);
+  background-color: black;
+  background-image: url("../images/homerightblurred.svg");
+  gap: 20px;
+}
+
+.homeheaderleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  flex-direction: column;
+  width: 50%;
+}
+.homeheaderright {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeheaderright img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.homeheaderright {
+  height: 100%;
+}
+.homeheadermain {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  height: 600px;
+  background-color: #f5e8d7;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.homeheadermain h1 {
+  font-size: 140px;
+  color: #072b43;
+  font-family: "FK Screamer";
+  letter-spacing: 6px;
+  line-height: 150px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.homeheadermain p {
+  font-size: 16px;
+  color: #072b43;
+  font-family: "Inter";
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}

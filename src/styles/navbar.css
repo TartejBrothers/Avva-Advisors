@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  height: 70px;
+  background-color: #f5e8d7;
+  border-bottom: 1px solid #bbbb;
+  position: fixed;
+  justify-content: space-between;
+}
+.navbar * {
+  font-family: "Poppins", sans-serif;
+}
+.navbarleft img {
+  height: 40px;
+  width: 40px;
+}
+.navbarleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbarright {
+  display: flex;
+  align-items: center;
+}
+.navbarright ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style-type: none;
+}
+.navbarright ul li {
+  display: flex;
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.navbarright ul li:hover {
+  scale: 1.05;
+  color: #072b43;
+}
+.navbarright ul li button {
+  background-color: #ffff;
+  border: 1px solid #072b43;
+  padding: 8px 14px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
