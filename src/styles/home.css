@@ -240,13 +240,16 @@
 .servicecard button {
   width: 100%;
   background-color: #f6f4f4;
-  padding: 10px;
+
   border-radius: 5px;
   display: flex;
+  padding: 12px 20px 8px 20px;
   align-items: center;
   justify-content: center;
 }
-
+.homecontactbg {
+  background-color: #f6f4f4;
+}
 @media screen and (max-width: 1000px) {
   .homeheadermain h1 {
     font-size: 50px;
@@ -279,6 +282,11 @@
   }
   .homeheadermain {
     padding-inline: 20px;
+  }
+  .homeheader {
+    min-height: 100svh;
+    height: auto;
+    padding: 120px 0px 80px;
   }
   .hometestiomonials {
     width: 100%;

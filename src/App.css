@@ -25,6 +25,7 @@ html {
 button {
   transition: all 0.3s ease;
   cursor: pointer;
+  line-height: 1;
 }
 button:focus {
   outline: none;
@@ -44,4 +45,9 @@ textarea {
   resize: vertical;
   min-height: 100px;
   max-height: 300px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

@@ -1,0 +1,152 @@
+.contactformtop h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #072b43;
+  text-align: center;
+}
+.contactform {
+  padding: 40px;
+  max-width: 1400px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+.contactformbody {
+  margin-top: 20px;
+  width: 100%;
+}
+.contactformbodyleft {
+  width: 40%;
+}
+.contactformbodyright {
+  width: 60%;
+}
+.contactformtop p {
+  font-size: 16px;
+  color: #868686;
+  text-align: center;
+}
+.contactformbody {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contactformbodyright {
+  background-color: #f5e8d7;
+  padding: 30px;
+  border-radius: 20px;
+}
+.contactformbodyright .inputdiv {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.contactformbodyright .inputdiv label {
+  font-size: 14px;
+  margin-left: 2px;
+  color: #072b43;
+}
+.contactformbodyright .inputdiv input,
+.contactformbodyright .inputdiv textarea {
+  width: 100%;
+  padding: 8px 8px 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #bbbb;
+}
+.contactformbody .inputdiv .inputdivfull,
+.contactformbody .inputdiv .inputdivhalf {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactinformationrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.contactinformationbox {
+  height: 40px;
+  width: 40px;
+  flex-shrink: 0;
+  display: flex;
+  background-color: #072b43;
+  border-radius: 5px;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+.contactinformationbox svg {
+  height: 20px;
+  width: 20px;
+}
+.contactformbodyleft h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #072b43;
+  text-align: center;
+}
+.contactformbodyright .inputdiv button {
+  background-color: #072b43;
+  color: #ffffff;
+  padding: 12px 14px 8px 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.contactleftbutton {
+  background-color: #ffffff;
+  padding: 12px 14px 12px 14px;
+  color: #5db436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+  border-radius: 5px;
+
+  margin: 30px auto 0 auto;
+  border: 1px solid #5db436;
+}
+.contactleftbutton svg {
+  height: 20px;
+  width: 20px;
+}
+.contactleftbutton p {
+  margin-top: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contactform {
+    padding: 30px 20px;
+  }
+  .contactformbody {
+    flex-direction: column;
+  }
+  .contactformbodyleft {
+    width: 100%;
+  }
+  .contactformbodyright {
+    width: 100%;
+  }
+  .contactformbodyright .inputdiv {
+    flex-direction: column;
+  }
+  .contactformbodyright .inputdiv input,
+  .contactformbodyright .inputdiv textarea {
+    width: 100%;
+  }
+  .contactformbodyright .inputdiv .inputdivfull,
+  .contactformbodyright .inputdiv .inputdivhalf {
+    width: 100%;
+  }
+  .contactformbodyright .inputdiv button {
+    width: 100%;
+  }
+  .contactleftbutton {
+    width: 100%;
+    max-width: 400px;
+  }
+}
