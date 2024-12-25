@@ -4,6 +4,7 @@ import HomeRightImage from "../images/homeright.svg";
 import Navbar from "../components/navbar";
 import WhyUsImage from "../images/whyus.jpeg";
 import TestimonialCard from "../components/testimonialcard";
+import ContactForm from "../components/contactform";
 export default function Home() {
   return (
     <div className="homemain">
@@ -142,6 +143,9 @@ export default function Home() {
               <button>Learn More</button>
             </div>
           </div>
+        </div>
+        <div className="homecontactbg">
+          <ContactForm />
         </div>
       </div>
     </div>
