@@ -1,0 +1,115 @@
+.footermain {
+  background-color: #f5e8d7;
+  border-top: 1px solid #bbbb;
+}
+.footertop {
+  padding: 40px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.footertopleft,
+.footertopright,
+.footertopcenter {
+  width: calc(33.333% - 20px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footertopleft img {
+  height: 40px;
+}
+.footertopleft p {
+  font-size: 16px;
+  color: #072b43;
+  margin-top: 10px;
+}
+
+.footertop h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #072b43;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  text-align: center;
+}
+
+.footerbottom {
+  border-top: 1px solid #bbbb;
+  padding: 20px;
+}
+.footerbottomcontent {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-weight: 600;
+  padding-inline: 20px;
+}
+.footerbottomright ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footertopright ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footermain ul li {
+  cursor: pointer;
+}
+
+.footertopright button {
+  background-color: #072b43;
+  color: #fff;
+  padding: 12px 25px 8px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footertop {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footertopleft,
+  .footertopright,
+  .footertopcenter {
+    width: 100%;
+    text-align: center;
+  }
+  .footertopright ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footertopright button {
+    width: 100%;
+    max-width: 400px;
+  }
+  .footerbottomcontent {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .footerbottomright ul {
+    gap: 5px;
+    flex-direction: column;
+  }
+  .footerbottomright ul li {
+    display: flex;
+    align-items: center;
+  }
+  .footerbottomright button {
+    width: 100%;
+  }
+}

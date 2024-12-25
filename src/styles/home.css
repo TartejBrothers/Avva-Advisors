@@ -283,6 +283,11 @@
   .homeheadermain {
     padding-inline: 20px;
   }
+  .homeheader {
+    min-height: 100svh;
+    height: auto;
+    padding: 120px 0px 80px;
+  }
   .hometestiomonials {
     width: 100%;
   }
