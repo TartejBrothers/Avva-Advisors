@@ -40,12 +40,12 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="navbarleft">
-        <img src={Logo} alt="logo" />
+        <img src={Logo} alt="logo" onClick={() => navigate("/")} />
       </div>
       <div className="navbarright">
         <ul>
           <li onClick={() => navigate("/")}>Home</li>
-          <li>About</li>
+          <li onClick={() => navigate("/about")}>About</li>
           <li>Tax Advisory</li>
           <li>Work Permits</li>
           <li>Immigration Stamps</li>
@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className={`dropdown ${isAnimating ? "close" : "open"}`}>
           <div className="dropdowntop">
             <div className="dropdowntopleft">
-              <img src={Logo} alt="Logo" />
+              <img src={Logo} alt="Logo" onClick={() => navigate("/")} />
             </div>
             <div className="navbarrightmobile" onClick={toggleDropdown}>
               <FaGripLines />
@@ -70,7 +70,7 @@ export default function Navbar() {
           </div>
           <ul>
             <li onClick={() => navigate("/")}>Home</li>
-            <li>About</li>
+            <li onClick={() => navigate("/")}>About</li>
             <li>Tax Advisory</li>
             <li>Work Permits</li>
             <li>Immigration Stamps</li>
