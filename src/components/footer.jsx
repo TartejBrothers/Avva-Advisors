@@ -95,7 +95,9 @@ export default function Footer() {
                 </ul>
               )}
             </li>
-            <li>Company Registration</li>
+            <li onClick={() => navigate("/company-registration")}>
+              Company Registration
+            </li>
             <li>
               <button onClick={() => navigate("/contact")}>Contact Us</button>
             </li>

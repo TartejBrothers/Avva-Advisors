@@ -5,7 +5,7 @@
   align-items: center;
   background-image: url("../images/contactus.png");
   background-size: 50%;
-  padding: 120px 0px 80px;
+  padding: 120px 20px 80px;
 
   background-repeat: repeat;
   background-position: center;
@@ -17,7 +17,21 @@
   border-radius: 30px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
-
+.registerformbody {
+  margin-top: 30px;
+}
+.registerformbody .contactformbodyright {
+  width: 100%;
+}
+.registerform {
+  max-width: 1400px;
+}
+.registerform .inputdivfull {
+  width: 100%;
+}
+.registerform .inputdivfull button {
+  width: 100%;
+}
 @media screen and (max-width: 1000px) {
   .contactusmainbody {
     background-size: 100%;
