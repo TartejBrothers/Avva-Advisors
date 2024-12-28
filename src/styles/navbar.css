@@ -7,6 +7,7 @@
   background-color: #f5e8d7;
   border-bottom: 1px solid #bbbb;
   position: fixed;
+  z-index: 100000;
   justify-content: space-between;
 }
 .navbar * {
@@ -117,7 +118,7 @@
   width: 100%;
   height: 100vh;
   background-color: #f5e8d7;
-  z-index: 9999;
+  z-index: 9999999;
   display: flex;
   flex-direction: column;
   justify-content: center;

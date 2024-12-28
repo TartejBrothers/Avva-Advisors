@@ -38,20 +38,26 @@ export default function Home() {
               <h1 className="homeheadertext">Why Us?</h1>
               <ul>
                 <li>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Illo, enim?
+                  <strong>Expertise and Experience:</strong> Our team’s
+                  extensive knowledge and experience in both tax and immigration
+                  laws ensure that our clients receive the most accurate and
+                  effective advice.
                 </li>
                 <li>
-                  Iusto, eaque atque. Eligendi repellendus assumenda tenetur
-                  distinctio dolore laudantium.
+                  <strong>Personalized Service:</strong> We understand that
+                  every client’s situation is unique. We offer personalized
+                  solutions tailored to meet individual and business-specific
+                  needs.
                 </li>
                 <li>
-                  Nobis ratione iusto beatae quod, maxime amet minima. Eligendi,
-                  exercitationem?
+                  <strong>Client-Centered Approach:</strong> At AVVA, we
+                  prioritize our clients' goals and concerns, working closely
+                  with them to achieve successful outcomes.
                 </li>
                 <li>
-                  Nobis ratione iusto beatae quod, maxime amet minima. Eligendi,
-                  exercitationem?
+                  <strong>Integrity and Transparency:</strong> We maintain the
+                  highest standards of integrity, ensuring transparent and
+                  ethical practices in all our services.
                 </li>
               </ul>
             </div>

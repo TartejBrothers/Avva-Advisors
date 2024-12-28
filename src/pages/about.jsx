@@ -4,6 +4,10 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import AboutImage1 from "../images/aboutpage/1.jpg";
 import AboutImage2 from "../images/aboutpage/2.avif";
+import ServiceCard from "../components/servicecard";
+import { TbTax } from "react-icons/tb";
+import { FaGlobe, FaBuilding } from "react-icons/fa";
+
 export default function About() {
   return (
     <div className="aboutmain">
@@ -67,6 +71,42 @@ export default function About() {
             </li>
           </ul>
           <img src={AboutImage2} alt="" />
+        </div>
+      </div>
+      <div className="aboutourmission">
+        <h1 className="homeheadertext ">Our Mission</h1>
+        <p>
+          Our mission is to simplify the intricacies of tax and immigration
+          processes for our clients, ensuring compliance with all relevant laws
+          while maximizing their financial and personal opportunities. We strive
+          to provide clarity, confidence, and peace of mind, allowing our
+          clients to focus on what they do best.
+        </p>
+      </div>
+      <div className="homegraybg">
+        <div className="aboutourservices">
+          <h1 className="homeheadertext">Our Services</h1>
+
+          <div className="aboutservicesrow">
+            <ServiceCard
+              icon={TbTax}
+              header="Individual Tax Services"
+              content="Personalized tax planning, filing, and advisory services to
+help individuals optimize their tax liabilities."
+            />
+            <ServiceCard
+              icon={FaBuilding}
+              header="Corporate Tax Solutions"
+              content="Comprehensive support for businesses, including tax
+compliance, strategic planning, and representation in tax disputes."
+            />
+            <ServiceCard
+              icon={FaGlobe}
+              header="International Taxation"
+              content="Expertise in cross-border tax issues, helping clients navigate
+the complexities of international tax regulations and treaties."
+            />
+          </div>
         </div>
       </div>
       <Footer />

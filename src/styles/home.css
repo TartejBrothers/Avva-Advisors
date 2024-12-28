@@ -3,11 +3,13 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh);
+  min-height: calc(100vh);
+  height: fit-content;
   background-color: black;
   /* background-image: url("../images/homeheaderbg.svg"); */
   background-image: url("../images/homerightblurred.svg");
   gap: 20px;
+  padding-top: 40px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,7 +48,7 @@
   max-width: 1400px;
   margin: 0 auto;
   width: calc(100% - 40px);
-  height: 600px;
+
   background-color: #f5e8d7;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -250,6 +252,9 @@
 .homecontactbg {
   background-color: #f6f4f4;
 }
+.homegraybg {
+  background-color: #f6f4f4;
+}
 @media screen and (max-width: 1000px) {
   .homeheadermain h1 {
     font-size: 50px;
@@ -291,4 +296,5 @@
   .hometestiomonials {
     width: 100%;
   }
+  
 }
