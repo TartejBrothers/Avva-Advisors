@@ -7,7 +7,7 @@ import AboutImage2 from "../images/aboutpage/2.avif";
 import ServiceCard from "../components/servicecard";
 import { TbTax } from "react-icons/tb";
 import { FaGlobe, FaBuilding } from "react-icons/fa";
-
+import ContactForm from "../components/contactform";
 export default function About() {
   return (
     <div className="aboutmain">
@@ -85,7 +85,7 @@ export default function About() {
       </div>
       <div className="homegraybg">
         <div className="aboutourservices">
-          <h1 className="homeheadertext">Our Services</h1>
+          <h1 className="homeheadertext">What We Offer</h1>
 
           <div className="aboutservicesrow">
             <ServiceCard
@@ -109,6 +109,9 @@ the complexities of international tax regulations and treaties."
           </div>
         </div>
       </div>
+
+      <ContactForm />
+
       <Footer />
     </div>
   );
