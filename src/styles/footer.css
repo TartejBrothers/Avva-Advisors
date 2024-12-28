@@ -77,7 +77,14 @@
   cursor: pointer;
   margin-top: 20px;
 }
-
+.footertopcenter .submenu li {
+  font-size: 14px !important;
+  margin: 3px 0px !important;
+}
+.footertopcenter .openablediv svg {
+  height: 12px;
+  width: 12px;
+}
 @media screen and (max-width: 1000px) {
   .footertop {
     flex-direction: column;

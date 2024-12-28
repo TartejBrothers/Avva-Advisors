@@ -3,15 +3,18 @@ import Logo from "../images/icons/logo.svg";
 import "../styles/navbar.css";
 import { FaGripLines } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
+import { IoIosArrowDown } from "react-icons/io";
 export default function Navbar() {
   const [triggerAnimation, setTriggerAnimation] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(null);
   const navigate = useNavigate();
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [navigate]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 100) {
@@ -37,6 +40,9 @@ export default function Navbar() {
     }
   };
 
+  const toggleSubMenu = (menu) => {
+    setActiveMenu(activeMenu === menu ? null : menu);
+  };
   return (
     <div className="navbar">
       <div className="navbarleft">
@@ -44,10 +50,12 @@ export default function Navbar() {
       </div>
       <div className="navbarright">
         <ul>
-          <li>Home</li>
-          <li>About</li>
+          <li onClick={() => navigate("/")}>Home</li>
+          <li onClick={() => navigate("/about")}>About</li>
           <li>
-            Tax Advisory
+            <div className="openablediv">
+              Tax Advisory <IoIosArrowDown />
+            </div>
             <ul className="dropdown-menu">
               <li onClick={() => navigate("/form11")}>Form 11</li>
               <li onClick={() => navigate("/form12")}>Form 12</li>
@@ -60,7 +68,9 @@ export default function Navbar() {
             </ul>
           </li>
           <li>
-            Work Permits{" "}
+            <div className="openablediv">
+              Work Permits <IoIosArrowDown />
+            </div>
             <ul className="dropdown-menu">
               <li onClick={() => navigate("/csep")}>CSEP</li>
               <li onClick={() => navigate("/gep")}>GEP</li>
@@ -68,7 +78,9 @@ export default function Navbar() {
             </ul>
           </li>
           <li>
-            Immigration Stamps{" "}
+            <div className="openablediv">
+              Immigration Stamps <IoIosArrowDown />
+            </div>
             <ul className="dropdown-menu">
               <li onClick={() => navigate("/stamp-0")}>Stamp 0</li>
               <li onClick={() => navigate("/vfs-application-support")}>
@@ -108,11 +120,75 @@ export default function Navbar() {
           </div>
           <ul>
             <li onClick={() => navigate("/")}>Home</li>
-            <li onClick={() => navigate("/")}>About</li>
-            <li>Tax Advisory</li>
-            <li>Work Permits</li>
-            <li>Immigration Stamps</li>
-            <li>Company Registration </li>
+            <li onClick={() => navigate("/about")}>About</li>
+            <li onClick={() => toggleSubMenu("tax-advisory")}>
+              <div className="openablediv">
+                Tax Advisory
+                <IoIosArrowDown
+                  className={
+                    activeMenu === "tax-advisory" ? "rotate180deg" : ""
+                  }
+                />
+              </div>
+              {activeMenu === "tax-advisory" && (
+                <ul className="submenu">
+                  <li onClick={() => navigate("/form11")}>Form 11</li>
+                  <li onClick={() => navigate("/form12")}>Form 12</li>
+                  <li onClick={() => navigate("/financial-advisory")}>
+                    Financial Advisory
+                  </li>
+                </ul>
+              )}
+            </li>
+            <li onClick={() => toggleSubMenu("work-permits")}>
+              <div className="openablediv">
+                Work Permits{" "}
+                <IoIosArrowDown
+                  className={
+                    activeMenu === "work-permits" ? "rotate180deg" : ""
+                  }
+                />
+              </div>
+              {activeMenu === "work-permits" && (
+                <ul className="submenu">
+                  <li onClick={() => navigate("/csep")}>CSEP</li>
+                  <li onClick={() => navigate("/gep")}>GEP</li>
+                  <li onClick={() => navigate("/stamp-1g")}>
+                    Stamp 1G Extension
+                  </li>
+                </ul>
+              )}
+            </li>
+            <li onClick={() => toggleSubMenu("immigration-stamps")}>
+              <div className="openablediv">
+                Immigration Stamps
+                <IoIosArrowDown
+                  className={
+                    activeMenu === "immigration-stamps" ? "rotate180deg" : ""
+                  }
+                />
+              </div>
+              {activeMenu === "immigration-stamps" && (
+                <ul className="submenu">
+                  <li onClick={() => navigate("/stamp-0")}>Stamp 0</li>
+                  <li onClick={() => navigate("/vfs-application-support")}>
+                    VFS Application Support
+                  </li>
+                  <li onClick={() => navigate("/stamp-5")}>Stamp 5</li>
+                  <li onClick={() => navigate("/stamp-6")}>Stamp 6</li>
+                  <li onClick={() => navigate("/adult-naturalisation")}>
+                    Adult Naturalisation
+                  </li>
+                  <li onClick={() => navigate("/child-naturalisation")}>
+                    Child Naturalisation
+                  </li>
+                  <li onClick={() => navigate("/citizenship-by-birth")}>
+                    Citizenship by Birth
+                  </li>
+                </ul>
+              )}
+            </li>
+            <li>Company Registration</li>
             <li>
               <button onClick={() => navigate("/contact")}>Contact Us</button>
             </li>
