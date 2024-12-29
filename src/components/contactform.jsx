@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import "../styles/contactform.css";
-export default function ContactForm() {
+export default function ContactForm({ mail }) {
+  const [selectedIssue, setSelectedIssue] = useState("");
+
+  const handleChange = (event) => {
+    setSelectedIssue(event.target.value);
+  };
   return (
     <div className="contactform">
       <div className="contactformtop">
@@ -27,7 +32,8 @@ export default function ContactForm() {
             <div className="contactinformationbox">
               <IoMail />
             </div>
-            <p>email@gmail.com</p>
+
+            <p>{mail ?? "contact@avvadvisors.com"}</p>
           </div>
           <div className="contactinformationrow">
             <div className="contactinformationbox">
@@ -85,6 +91,25 @@ export default function ContactForm() {
                   required
                   placeholder="eg: 1234567890"
                 />
+              </div>
+            </div>
+            <div className="inputdiv">
+              <div className="inputdivfull">
+                <label htmlFor="issue">Issue Type</label>
+                <select
+                  id="issueType"
+                  name="issueType"
+                  value={selectedIssue}
+                  onChange={handleChange}
+                >
+                  <option value="" disabled>
+                    Choose An Issue
+                  </option>
+                  <option value="stamps">Stamps</option>
+                  <option value="work-permits">Work Permits</option>
+                  <option value="taxes">Taxes</option>
+                  <option value="startup">Startup</option>
+                </select>
               </div>
             </div>
             <div className="inputdiv">

@@ -1,21 +1,5 @@
 .taxadvisoryheaderbg {
-  background: rgb(7, 43, 67);
-  background: -moz-linear-gradient(
-    135deg,
-    rgba(7, 43, 67, 1) 0%,
-    rgba(255, 215, 163, 1) 78%
-  );
-  background: -webkit-linear-gradient(
-    135deg,
-    rgba(7, 43, 67, 1) 0%,
-    rgba(255, 215, 163, 1) 78%
-  );
-  background: linear-gradient(
-    135deg,
-    rgba(7, 43, 67, 1) 0%,
-    rgba(255, 215, 163, 1) 78%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072b43",endColorstr="#ffd7a3",GradientType=1);
+  background-color: #072b43;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
   padding-bottom: 60px;
 }
@@ -28,7 +12,8 @@
   margin: 0 auto;
   color: #ffff;
   padding-top: 80px;
-  padding: 100px 20px 40px 20px;
+  gap: 30px;
+  padding: 120px 20px 60px 20px;
 }
 .taxadvisoryheaderleft {
   width: 70%;
@@ -43,10 +28,70 @@
   padding: 30px;
   outline: 2px solid #ffffff;
   outline-offset: 10px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.taxadvisoryheaderleft h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.taxadvisorybody {
+  display: flex;
+
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  flex-direction: column;
+}
+.taxadvisorybody h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #072b43;
+}
+.taxadvisorybody p {
+  font-size: 20px;
+  color: #072b43;
+}
+.taxadvisorybody h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.taxadvisorybody h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.taxadvisorybody ul {
+  list-style-type: disc !important;
+
+  padding: 0;
+}
+.taxadvisorybody ul li {
+  font-size: 20px;
+  color: #072b43;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .taxadvisoryheader {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .taxadvisoryheaderleft {
+    width: 100%;
+  }
+  .taxadvisoryheaderright {
+    width: 100%;
+  }
+  .taxadvisoryheaderleft h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .taxadvisoryheaderbg {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
 }

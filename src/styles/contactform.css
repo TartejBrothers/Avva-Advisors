@@ -46,6 +46,7 @@
   color: #072b43;
 }
 .contactformbodyright .inputdiv input,
+.contactformbodyright .inputdiv select,
 .contactformbodyright .inputdiv textarea {
   width: 100%;
   padding: 8px 8px 6px 8px;
