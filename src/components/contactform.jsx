@@ -15,8 +15,10 @@ export default function ContactForm({ mail }) {
       <div className="contactformtop">
         <h2>Contact Us</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-          perferendis?
+          We’re here to assist you with all your financial, tax, and immigration
+          needs in Ireland. Whether you need advice on tax filing, company
+          registration, immigration support, or any other financial advisory
+          services, our experienced team is ready to help.
         </p>
       </div>
       <div className="contactformbody">
@@ -39,7 +41,11 @@ export default function ContactForm({ mail }) {
             <div className="contactinformationbox">
               <FaLocationDot />
             </div>
-            <p>123, Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Monday - Friday: 6:00 PM - 8:00 PM
+              <br />
+              Saturday - Sunday: 10:00 AM - 2:00 PM <br />
+            </p>
           </div>
           <button className="contactleftbutton">
             <FaWhatsapp />
