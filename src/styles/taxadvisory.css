@@ -1,0 +1,143 @@
+.taxadvisoryheaderbg {
+  background-color: #072b43;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  padding-bottom: 60px;
+}
+.workpermitheaderbg {
+  background-color: #21272d;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    92.857% 90%,
+    85.714% 100%,
+    78.571% 90%,
+    71.429% 100%,
+    64.286% 90%,
+    57.143% 100%,
+    50% 90%,
+    42.857% 100%,
+    35.714% 90%,
+    28.571% 100%,
+    21.429% 90%,
+    14.286% 100%,
+    7.143% 90%,
+    0% 100%
+  );
+  padding-bottom: 60px;
+}
+.immigrationheaderbg {
+  background-color: #072b43;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  padding-bottom: 60px;
+}
+.taxadvisoryheader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffff;
+  padding-top: 80px;
+  gap: 30px;
+  padding: 120px 20px 60px 20px;
+}
+.taxadvisoryheaderleft {
+  width: 70%;
+}
+.taxadvisoryheaderright img {
+  width: 80%;
+  max-width: 400px;
+  object-fit: contain;
+}
+.taxadvisoryheaderright {
+  border-radius: 50%;
+  padding: 30px;
+  outline: 2px solid #ffffff;
+  outline-offset: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.taxadvisoryheaderleft h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.taxadvisorybody {
+  display: flex;
+
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  flex-direction: column;
+}
+.taxadvisorybody h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #072b43;
+}
+.taxadvisorybody p {
+  font-size: 20px;
+  color: #072b43;
+}
+.taxadvisorybody h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.taxadvisorybody h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.taxadvisorybody ul {
+  list-style-type: disc !important;
+
+  padding: 0;
+}
+.taxadvisorybody ul li {
+  font-size: 20px;
+  color: #072b43;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .taxadvisoryheader {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .workpermitheaderbg {
+    background-color: #21272d;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 100%,
+      83.33% 90%,
+      66.66% 100%,
+      50% 90%,
+      33.33% 100%,
+      16.66% 90%,
+      0% 100%
+    );
+    padding-bottom: 60px;
+  }
+  .taxadvisoryheaderleft {
+    width: 100%;
+  }
+  .taxadvisoryheaderright {
+    width: 100%;
+  }
+  .taxadvisoryheaderleft h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .taxadvisoryheaderbg {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+  .taxadvisorybody h1 {
+    font-size: 32px;
+  }
+}
