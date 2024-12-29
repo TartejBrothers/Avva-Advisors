@@ -1,0 +1,52 @@
+.taxadvisoryheaderbg {
+  background: rgb(7, 43, 67);
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(7, 43, 67, 1) 0%,
+    rgba(255, 215, 163, 1) 78%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(7, 43, 67, 1) 0%,
+    rgba(255, 215, 163, 1) 78%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(7, 43, 67, 1) 0%,
+    rgba(255, 215, 163, 1) 78%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072b43",endColorstr="#ffd7a3",GradientType=1);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  padding-bottom: 60px;
+}
+.taxadvisoryheader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffff;
+  padding-top: 80px;
+  padding: 100px 20px 40px 20px;
+}
+.taxadvisoryheaderleft {
+  width: 70%;
+}
+.taxadvisoryheaderright img {
+  width: 80%;
+  max-width: 400px;
+  object-fit: contain;
+}
+.taxadvisoryheaderright {
+  border-radius: 50%;
+  padding: 30px;
+  outline: 2px solid #ffffff;
+  outline-offset: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
