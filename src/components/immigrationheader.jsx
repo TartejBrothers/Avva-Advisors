@@ -17,7 +17,7 @@ export default function ImmigrationHeader() {
           </p>
         </div>
         <div className="taxadvisoryheaderright">
-          <img src={ImmigrationHeaderRight} alt="Tax Advisory" />
+          <img src={ImmigrationHeaderRight} alt="ImmigrationHeaderRight" />
         </div>
       </div>
     </div>
