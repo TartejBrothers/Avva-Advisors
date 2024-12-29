@@ -108,11 +108,11 @@ export default function Footer() {
           <ul>
             <li>
               <FaPhoneAlt />
-              +1234567890
+              +353 (0)1 234 5678
             </li>
             <li>
               <IoMail />
-              email@gmail.com
+              contact@avvadvisors.com
             </li>
           </ul>
           <button>Contact Us</button>
