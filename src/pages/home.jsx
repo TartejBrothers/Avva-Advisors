@@ -6,7 +6,9 @@ import WhyUsImage from "../images/whyus.jpeg";
 import TestimonialCard from "../components/testimonialcard";
 import ContactForm from "../components/contactform";
 import Footer from "../components/footer";
+import { useNavigate } from "react-router-dom";
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className="homemain">
       <Navbar />
@@ -112,10 +114,14 @@ export default function Home() {
               <div className="servicecardtop">
                 <h2>Tax Advisory</h2>
                 <ul>
-                  <li>Form 11</li>
-                  <li>Form 12</li>
-                  <li>Financial Advisory</li>
-                  <li>Pension Advisory</li>
+                  <li onClick={() => navigate("/form11")}>Form 11</li>
+                  <li onClick={() => navigate("/form12")}>Form 12</li>
+                  <li onClick={() => navigate("/financial-advisory")}>
+                    Financial Advisory
+                  </li>{" "}
+                  <li onClick={() => navigate("/pensions-advisory")}>
+                    Pensions Advisory
+                  </li>
                 </ul>
               </div>
               <button>Learn More</button>
@@ -125,9 +131,11 @@ export default function Home() {
               <div className="servicecardtop">
                 <h2>Work Permits</h2>
                 <ul>
-                  <li>CSEP</li>
-                  <li>GEP</li>
-                  <li>Stamp 1G Extension</li>
+                  <li onClick={() => navigate("/csep")}>CSEP</li>
+                  <li onClick={() => navigate("/gep")}>GEP</li>
+                  <li onClick={() => navigate("/stamp-1g")}>
+                    Stamp 1G Extension
+                  </li>
                 </ul>
               </div>
 
@@ -137,13 +145,21 @@ export default function Home() {
               <div className="servicecardtop">
                 <h2>Immigration Stamps</h2>
                 <ul>
-                  <li>Stamp 0</li>
-                  <li>VFS Application Support</li>
-                  <li>Stamp 5</li>
-                  <li>Stamp 6</li>
-                  <li>Adult Naturalisation</li>
-                  <li>Child Naturalisation</li>
-                  <li>Citizenship by Birth</li>
+                  <li onClick={() => navigate("/stamp-0")}>Stamp 0</li>
+                  <li onClick={() => navigate("/vfs-application-support")}>
+                    VFS Application Support
+                  </li>
+                  <li onClick={() => navigate("/stamp-5")}>Stamp 5</li>
+                  <li onClick={() => navigate("/stamp-6")}>Stamp 6</li>
+                  <li onClick={() => navigate("/adult-naturalisation")}>
+                    Adult Naturalisation
+                  </li>
+                  <li onClick={() => navigate("/child-naturalisation")}>
+                    Child Naturalisation
+                  </li>
+                  <li onClick={() => navigate("/citizenship-by-birth")}>
+                    Citizenship by Birth
+                  </li>
                 </ul>
               </div>
 

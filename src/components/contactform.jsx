@@ -4,6 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import "../styles/contactform.css";
+import { IoTimeSharp } from "react-icons/io5";
 export default function ContactForm({ mail }) {
   const [selectedIssue, setSelectedIssue] = useState("");
 
@@ -28,7 +29,7 @@ export default function ContactForm({ mail }) {
             <div className="contactinformationbox">
               <FaPhoneAlt />
             </div>
-            <p>+1234567890</p>
+            <p>+353 (0)1 234 5678</p>
           </div>
           <div className="contactinformationrow">
             <div className="contactinformationbox">
@@ -41,6 +42,12 @@ export default function ContactForm({ mail }) {
             <div className="contactinformationbox">
               <FaLocationDot />
             </div>
+            <p>123 Main Street, Dublin, Ireland</p>
+          </div>
+          <div className="contactinformationrow">
+            <div className="contactinformationbox">
+              <IoTimeSharp />
+            </div>
             <p>
               Monday - Friday: 6:00 PM - 8:00 PM
               <br />
@@ -49,7 +56,7 @@ export default function ContactForm({ mail }) {
           </div>
           <button className="contactleftbutton">
             <FaWhatsapp />
-            <p>us At 911234567890</p>
+            <p>us At +353 (0)1 234 5678</p>
           </button>
         </div>
         <div className="contactformbodyright">

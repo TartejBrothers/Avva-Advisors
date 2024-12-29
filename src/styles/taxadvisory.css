@@ -46,6 +46,16 @@
   align-items: center;
   background-repeat: no-repeat;
 }
+.companyregistrationbg {
+  background-color: #072b43;
+  background-image: url("../images/companyregistrationbg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
 .taxadvisoryheader {
   display: flex;
   align-items: center;
@@ -144,6 +154,7 @@
   }
   .taxadvisoryheaderright {
     width: 100%;
+    max-width: 500px;
   }
   .taxadvisoryheaderleft h2 {
     font-size: 40px;
@@ -154,5 +165,17 @@
   }
   .taxadvisorybody h1 {
     font-size: 32px;
+  }
+  .taxadvisorybody p {
+    font-size: 18px;
+  }
+  .taxadvisorybody h2 {
+    font-size: 28px;
+  }
+  .taxadvisorybody h3 {
+    font-size: 22px;
+  }
+  .taxadvisorybody ul li {
+    font-size: 18px;
   }
 }
