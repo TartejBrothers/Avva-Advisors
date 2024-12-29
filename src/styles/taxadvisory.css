@@ -2,6 +2,11 @@
   background-color: #072b43;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
   padding-bottom: 60px;
+  background-image: url("../images/taxadvisorybg.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  background-repeat: no-repeat;
 }
 .workpermitheaderbg {
   background-color: #21272d;
@@ -24,6 +29,11 @@
     7.143% 90%,
     0% 100%
   );
+  background-image: url("../images/workpermitbg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+
   padding-bottom: 60px;
 }
 .immigrationheaderbg {
@@ -34,6 +44,7 @@
   min-height: 600px;
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
 }
 .taxadvisoryheader {
   display: flex;
