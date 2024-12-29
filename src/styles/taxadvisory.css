@@ -28,8 +28,12 @@
 }
 .immigrationheaderbg {
   background-color: #072b43;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-  padding-bottom: 60px;
+  background-image: url("../images/immgirationbg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
 }
 .taxadvisoryheader {
   display: flex;

@@ -12,6 +12,12 @@ import Csep from "./pages/work-permit/csep";
 import Gep from "./pages/work-permit/gep";
 import Stamp1g from "./pages/work-permit/stamp-1g";
 import Stamp0 from "./pages/immigration/stamp-0";
+import Vfs from "./pages/immigration/vfs";
+import Stamp5 from "./pages/immigration/stamp-5";
+import Stamp6 from "./pages/immigration/stamp-6";
+import AdultNaturalisation from "./pages/immigration/adult-naturalisation";
+import ChildNaturalisation from "./pages/immigration/child-naturalisation";
+import CitizenshipBirth from "./pages/immigration/citizenship-birth";
 function App() {
   return (
     <Router>
@@ -29,6 +35,12 @@ function App() {
         <Route path="/gep" element={<Gep />} />
         <Route path="/stamp-1g" element={<Stamp1g />} />
         <Route path="/stamp-0" element={<Stamp0 />} />
+        <Route path="/vfs-application-support" element={<Vfs />} />
+        <Route path="/stamp-5" element={<Stamp5 />} />
+        <Route path="/stamp-6" element={<Stamp6 />} />
+        <Route path="/adult-naturalisation" element={<AdultNaturalisation />} />
+        <Route path="/child-naturalisation" element={<ChildNaturalisation />} />
+        <Route path="/citizenship-by-birth" element={<CitizenshipBirth />} />
       </Routes>
     </Router>
   );
