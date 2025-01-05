@@ -1,15 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import "../styles/contactform.css";
+import emailjs from "@emailjs/browser";
 import { IoTimeSharp } from "react-icons/io5";
 export default function ContactForm({ mail }) {
   const [selectedIssue, setSelectedIssue] = useState("");
-
+  const formRef = useRef();
   const handleChange = (event) => {
     setSelectedIssue(event.target.value);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log("Message sent:", result.text);
+          alert(
+            "Thanks for contacting us. Our AVVA Advisor will reach out to you."
+          );
+        },
+        (error) => {
+          console.log("Error:", error.text);
+          alert("Failed to send the message. Please try again.");
+        }
+      );
   };
   return (
     <div className="contactform">
@@ -60,23 +84,23 @@ export default function ContactForm({ mail }) {
           </button>
         </div>
         <div className="contactformbodyright">
-          <form>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <div className="inputdiv">
               <div className="inputdivhalf">
-                <label htmlFor="firstname">First Name</label>
+                <label htmlFor="from_first_name">First Name</label>
 
                 <input
                   type="text"
-                  name="firstname"
+                  name="from_first_name"
                   placeholder="eg: Josh"
                   required
                 />
               </div>
               <div className="inputdivhalf">
-                <label htmlFor="lastname">Last Name</label>
+                <label htmlFor="from_last_name">Last Name</label>
                 <input
                   type="text"
-                  name="lastname"
+                  name="from_last_name"
                   placeholder="eg: Brown"
                   required
                 />
@@ -84,10 +108,10 @@ export default function ContactForm({ mail }) {
             </div>
             <div className="inputdiv">
               <div className="inputdivfull">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="from_email">Email</label>
                 <input
                   type="email"
-                  name="email"
+                  name="from_email"
                   className="inputdivfull"
                   required
                   placeholder="eg: joshbrown@gmail.com"
@@ -96,10 +120,10 @@ export default function ContactForm({ mail }) {
             </div>
             <div className="inputdiv">
               <div className="inputdivfull">
-                <label htmlFor="phone">Phone Number</label>
+                <label htmlFor="from_phone">Phone Number</label>
                 <input
                   type="number"
-                  name="phone"
+                  name="from_phone"
                   className="inputdivfull"
                   required
                   placeholder="eg: 1234567890"
@@ -108,12 +132,13 @@ export default function ContactForm({ mail }) {
             </div>
             <div className="inputdiv">
               <div className="inputdivfull">
-                <label htmlFor="issue">Issue Type</label>
+                <label htmlFor="from_issue">Issue Type</label>
                 <select
                   id="issueType"
-                  name="issueType"
+                  name="from_issue"
                   value={selectedIssue}
                   onChange={handleChange}
+                  required
                 >
                   <option value="" disabled>
                     Choose An Issue
@@ -128,9 +153,10 @@ export default function ContactForm({ mail }) {
             </div>
             <div className="inputdiv">
               <div className="inputdivfull">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="issue">Message</label>
                 <textarea
-                  name="message"
+                  name="issue"
+                  required
                   placeholder="eg: Help with taxes"
                 ></textarea>
               </div>
