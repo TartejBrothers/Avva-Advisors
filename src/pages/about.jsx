@@ -8,7 +8,9 @@ import ServiceCard from "../components/servicecard";
 import { TbTax } from "react-icons/tb";
 import { FaGlobe, FaBuilding } from "react-icons/fa";
 import ContactForm from "../components/contactform";
+import { useNavigate } from "react-router-dom";
 export default function About() {
+  const navigate = useNavigate();
   return (
     <div className="aboutmain">
       <Navbar />
@@ -25,7 +27,12 @@ export default function About() {
             consultants, tax agents all working together to deliver tailored
             solutions that meet the unique needs of our clients.
           </p>
-          <button className="contactusbutton">Contact Us</button>
+          <button
+            className="contactusbutton"
+            onClick={() => navigate("/contact")}
+          >
+            Contact Us
+          </button>
         </div>
       </div>
       <div className="aboutmainbody">

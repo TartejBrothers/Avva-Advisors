@@ -27,10 +27,22 @@ export default function Gep() {
             <ul>
               <li>Applicants must have a job offer from an Irish employer.</li>
               <li>
-                Minimum annual salary requirements:
+                Minimum annual remuneration - is generally €34,000. However, it
+                is:
                 <ul>
-                  <li>€30,000 for jobs in Dublin and major cities.</li>
-                  <li>€27,000 for jobs outside Dublin and major cities.</li>
+                  <li>
+                    In the case of employment as a Horticulture worker, Meat
+                    Processor Operative, the minimum annual remuneration is
+                    €30,000 and in respect of which the minimum hourly rate of
+                    remuneration €14.79
+                  </li>
+
+                  <li>
+                    In the case of employment as a Health Care Assistant (HCA) &
+                    Home Support Worker (SOC 6145), the minimum annual
+                    remuneration is currently retained at €27,000, pending
+                    further consultation
+                  </li>
                 </ul>
               </li>
               <li>
