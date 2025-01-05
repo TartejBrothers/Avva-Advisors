@@ -29,7 +29,7 @@ export default function ContactForm({ mail }) {
             <div className="contactinformationbox">
               <FaPhoneAlt />
             </div>
-            <p>+353 (0)1 234 5678</p>
+            <p>0892241645</p>
           </div>
           <div className="contactinformationrow">
             <div className="contactinformationbox">
@@ -42,7 +42,7 @@ export default function ContactForm({ mail }) {
             <div className="contactinformationbox">
               <FaLocationDot />
             </div>
-            <p>123 Main Street, Dublin, Ireland</p>
+            <p>Newcastle Village, Dublin 22, Ireland</p>
           </div>
           <div className="contactinformationrow">
             <div className="contactinformationbox">
@@ -56,7 +56,7 @@ export default function ContactForm({ mail }) {
           </div>
           <button className="contactleftbutton">
             <FaWhatsapp />
-            <p>us At +353 (0)1 234 5678</p>
+            <p>us At 0892241645</p>
           </button>
         </div>
         <div className="contactformbodyright">
@@ -122,6 +122,7 @@ export default function ContactForm({ mail }) {
                   <option value="work-permits">Work Permits</option>
                   <option value="taxes">Taxes</option>
                   <option value="startup">Startup</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
             </div>

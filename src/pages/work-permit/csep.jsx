@@ -31,7 +31,7 @@ export default function Csep() {
               <li>
                 Minimum annual salary requirements:
                 <ul>
-                  <li>€44,000 for roles requiring a relevant degree.</li>
+                  <li>€38,000 for roles requiring a relevant degree.</li>
                   <li>€64,000 for other eligible roles.</li>
                 </ul>
               </li>

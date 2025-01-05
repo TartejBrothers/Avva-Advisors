@@ -18,6 +18,8 @@ import Stamp6 from "./pages/immigration/stamp-6";
 import AdultNaturalisation from "./pages/immigration/adult-naturalisation";
 import ChildNaturalisation from "./pages/immigration/child-naturalisation";
 import CitizenshipBirth from "./pages/immigration/citizenship-birth";
+import Privacy from "./pages/privacy";
+import Terms from "./pages/terms";
 function App() {
   return (
     <Router>
@@ -41,6 +43,8 @@ function App() {
         <Route path="/adult-naturalisation" element={<AdultNaturalisation />} />
         <Route path="/child-naturalisation" element={<ChildNaturalisation />} />
         <Route path="/citizenship-by-birth" element={<CitizenshipBirth />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
+        <Route path="/terms-of-service" element={<Terms />} />
       </Routes>
     </Router>
   );

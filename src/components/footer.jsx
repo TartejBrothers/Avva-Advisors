@@ -18,9 +18,11 @@ export default function Footer() {
         <div className="footertopleft">
           <img src={Logo} alt="Logo" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nisi
-            dignissimos accusantium nesciunt quod dolor iure deserunt hic?
-            Expedita quisquam beatae dolor magnam vitae doloribus?
+            At AVVA Tax and Immigration, we offer expert services in taxation,
+            immigration, personal finance advisory, and company registration in
+            Ireland. Our personalized approach ensures reliable, efficient
+            solutions tailored to your needs, backed by a deep understanding of
+            local and international regulations.
           </p>
         </div>
         <div className="footertopcenter">
@@ -108,14 +110,14 @@ export default function Footer() {
           <ul>
             <li>
               <FaPhoneAlt />
-              +353 (0)1 234 5678
+              0892241645
             </li>
             <li>
               <IoMail />
               contact@avvadvisors.com
             </li>
           </ul>
-          <button>Contact Us</button>
+          <button onClick={() => navigate("/contact")}>Contact Us</button>
         </div>
       </div>
       <div className="footerbottom">
@@ -123,8 +125,12 @@ export default function Footer() {
           <p>© 2024 All Rights Reserved</p>
           <div className="footerbottomright">
             <ul>
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
+              <li onClick={() => navigate("/privacy-policy")}>
+                Privacy Policy
+              </li>
+              <li onClick={() => navigate("/terms-of-service")}>
+                Terms of Service
+              </li>
             </ul>
           </div>
         </div>
