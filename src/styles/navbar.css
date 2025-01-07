@@ -17,11 +17,6 @@
   height: 40px;
   width: 40px;
 }
-.navbarleft {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .navbarright {
   display: flex;
   align-items: center;
@@ -242,6 +237,53 @@
   cursor: pointer;
   margin: 10px 0 !important;
   transition: all 0.3s ease;
+}
+.animatedtextmain {
+  height: 50px;
+  position: fixed;
+  overflow-y: hidden;
+}
+.animatedtext {
+  display: flex;
+  font-size: 24px;
+  position: fixed;
+  height: 50px;
+  overflow-y: hidden;
+  font-weight: 700;
+  gap: 2px;
+}
+.animatedtextreplacement {
+  display: flex;
+  font-size: 24px;
+
+  height: 50px;
+  overflow-y: hidden;
+  font-weight: 700;
+  gap: 2px;
+}
+.animatedtext .a {
+  transform: translateY(0px);
+  transition: all 0.2s ease-in-out;
+  transition-delay: 160ms;
+  display: flex;
+  align-items: center;
+}
+.animatedtext.animate .a {
+  transform: translateY(-50px);
+}
+.replacementtext {
+  transform: translateY(50px);
+  transition: all 0.2s ease-in-out;
+  transition-delay: 160ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding-inline: 3px;
+}
+
+.animatedtextreplacement.animate .replacementtext {
+  transform: translateY(0px);
 }
 @media screen and (max-width: 1000px) {
   .navbarright {

@@ -44,9 +44,26 @@ export default function Navbar() {
     setActiveMenu(activeMenu === menu ? null : menu);
   };
   return (
-    <div className="navbar">
+    <div
+      className={`navbar ${triggerAnimation ? "animatenavbar" : ""} 
+       `}
+    >
       <div className="navbarleft">
-        <img src={Logo} alt="logo" onClick={() => navigate("/")} />
+        <div className="animatedtextmain">
+          <div className={`animatedtext ${triggerAnimation ? "animate" : ""}`}>
+            <div className="a">AVVA</div>
+          </div>
+        </div>
+
+        <div
+          className={`animatedtextreplacement ${
+            triggerAnimation ? "animate" : ""
+          }`}
+        >
+          <div className="replacementtext">
+            <img src={Logo} alt="Logo" />
+          </div>
+        </div>
       </div>
       <div className="navbarright">
         <ul>
