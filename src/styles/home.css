@@ -90,8 +90,9 @@
   transform: translateY(-2px);
   scale: 1.05;
 }
-.homeheadermain .buttonrow button:first-child {
+.homeheadermain .buttonrow a button:first-child {
   background-color: #ffff;
+  color: #072b43;
 }
 .homeheadermain .buttonrow button:last-child {
   background-color: #072b43;

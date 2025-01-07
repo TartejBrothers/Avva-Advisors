@@ -28,7 +28,9 @@ export default function Home() {
             international regulations.
           </p>
           <div className="buttonrow mt-7">
-            <button>Book Consulation</button>
+            <a href="https://calendly.com/contact-avvaadvisors" target="_blank">
+              <button>Book Consulation</button>
+            </a>
             <button onClick={() => navigate("/contact")}>Contact Us</button>
           </div>
         </div>
