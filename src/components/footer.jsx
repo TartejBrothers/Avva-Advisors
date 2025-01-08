@@ -3,6 +3,9 @@ import Logo from "../images/icons/logo.svg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import "../styles/footer.css";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 import { IoIosArrowDown } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
@@ -117,6 +120,26 @@ export default function Footer() {
               contact@avvadvisors.com
             </li>
           </ul>
+          <div className="socialrow">
+            <a
+              href="https://www.linkedin.com/company/avvaadvisors/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/avvaadvisors/?hl=en"
+              target="_blank"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.facebook.com/people/Avva-Advisors/61571587536534/"
+              target="_blank"
+            >
+              <FaFacebook />
+            </a>
+          </div>
           <button onClick={() => navigate("/contact")}>Contact Us</button>
         </div>
       </div>
