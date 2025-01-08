@@ -5,6 +5,9 @@ import { IoMail } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import "../styles/contactform.css";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { IoTimeSharp } from "react-icons/io5";
 export default function ContactForm({ mail }) {
   const [selectedIssue, setSelectedIssue] = useState("");
@@ -78,10 +81,35 @@ export default function ContactForm({ mail }) {
               Saturday - Sunday: 10:00 AM - 2:00 PM <br />
             </p>
           </div>
-          <button className="contactleftbutton">
-            <FaWhatsapp />
-            <p>us At 0892241645</p>
-          </button>
+          <div className="socialrow mx-auto">
+            <a
+              href="https://www.linkedin.com/company/avvaadvisors/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/avvaadvisors/?hl=en"
+              target="_blank"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.facebook.com/people/Avva-Advisors/61571587536534/"
+              target="_blank"
+            >
+              <FaFacebook />
+            </a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=353892241645&text&type=phone_number&app_absent=0"
+            target="_blank"
+          >
+            <button className="contactleftbutton">
+              <FaWhatsapp />
+              <p>us At 0892241645</p>
+            </button>
+          </a>
         </div>
         <div className="contactformbodyright">
           <form ref={formRef} onSubmit={handleSubmit}>
