@@ -48,7 +48,7 @@ export default function Navbar() {
       className={`navbar ${triggerAnimation ? "animatenavbar" : ""} 
        `}
     >
-      <div className="navbarleft">
+      <div className="navbarleft cursor-pointer" onClick={() => navigate("/")}>
         <div className="animatedtextmain">
           <div className={`animatedtext ${triggerAnimation ? "animate" : ""}`}>
             <div className="a">AVVA</div>
