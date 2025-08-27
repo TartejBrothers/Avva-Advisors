@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import About from "./pages/about";
+import Pricing from "./pages/pricing";
 import CompanyRegistration from "./pages/companyregistration";
 import Form11 from "./pages/tax-advisory/form11";
 import Form12 from "./pages/tax-advisory/form12";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<About />} />
         <Route path="/form11" element={<Form11 />} />
         <Route path="/form12" element={<Form12 />} />

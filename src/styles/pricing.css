@@ -1,0 +1,69 @@
+.feecard h4 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+.feecard p {
+  font-size: 16px;
+  color: #868686;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+.pricingmainbody {
+  min-height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/pricing.png");
+  background-size: 30%;
+  width: 100%;
+  padding: 120px 20px 80px;
+  background-color: #faf7f3;
+  background-blend-mode: darken;
+  background-repeat: repeat;
+  background-position: center;
+}
+.pricingmainbodybg {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.pricingmainbodybg button {
+  background-color: #072b43;
+  color: #ffffff;
+  padding: 12px 14px 8px 14px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.pricingmainbodybg table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricingmainbodybg table th,
+.pricingmainbodybg table td {
+  padding: 12px 15px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+.pricingmainbodybg table th {
+  background-color: #f5e8d7;
+  font-size: 18px;
+  font-weight: bold;
+}
+.pricingmainbodybg table td:nth-child(1) {
+  color: #515151;
+}
+.pricingmainbodybg table td:nth-child(2) {
+  font-weight: 600;
+  font-size: 15px;
+  padding-right: 15px;
+}
