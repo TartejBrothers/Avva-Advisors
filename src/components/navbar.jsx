@@ -119,6 +119,7 @@ export default function Navbar() {
           <li onClick={() => navigate("/company-registration")}>
             Company Registration
           </li>
+          <li onClick={() => navigate("/pricing")}>Pricing</li>
           <li>
             <button onClick={() => navigate("/contact")}>Contact Us</button>
           </li>
@@ -210,6 +211,7 @@ export default function Navbar() {
             <li onClick={() => navigate("/company-registration")}>
               Company Registration
             </li>
+            <li onClick={() => navigate("/pricing")}>Pricing</li>
             <li>
               <button onClick={() => navigate("/contact")}>Contact Us</button>
             </li>
