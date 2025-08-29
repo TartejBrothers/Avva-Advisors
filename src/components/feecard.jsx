@@ -40,11 +40,11 @@ export default function FeeCard() {
             <td>
               Small Business Package (inc. 1 payroll + reg. among all forms)
             </td>
-            <td>€2000</td>
+            <td>€1500</td>
           </tr>
           <tr>
             <td>Umbrella Company Services</td>
-            <td>€150/month</td>
+            <td>€75/month</td>
           </tr>
           <tr>
             <td>CSEP / General Employment Permit Filing</td>
