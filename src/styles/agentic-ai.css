@@ -1,0 +1,70 @@
+.agentic-ai-bg {
+  background-color: #072b43;
+  padding-bottom: 60px;
+  background-image: url("../images/agentic-ai.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  background-repeat: no-repeat;
+}
+.agentic-ai-bg .taxadvisoryheader {
+  padding: 140px 20px 60px 20px;
+  flex: 1;
+  display: flex;
+}
+.agentic-ai-bg .taxadvisoryheaderleft {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.agentic-ai-bg .taxadvisoryheaderleft h5 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.checkbox-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkbox-point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.checkbox-point svg {
+  color: #012060;
+}
+.agentic-service-card .aboutservicecardicon svg {
+  color: #012060;
+}
+.agentic-service-card .aboutservicecardcontent h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.agentic-service-card .aboutservicecardcontent ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #7d8184;
+}
+.agentic-service-card .aboutservicecardcontent ul li {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+  .agentic-ai-bg .taxadvisoryheader {
+    flex-direction: column;
+    padding: 100px 20px 40px 20px;
+  }
+  .agentic-ai-bg .taxadvisoryheaderleft h5 {
+    font-size: 20px;
+  }
+}

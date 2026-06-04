@@ -4,9 +4,9 @@ import Footer from "../components/footer";
 import "../styles/contact.css";
 import ContactForm from "../components/contactform";
 import CompanyRegistrationRight from "../images/companyregistration.svg";
-export default function Contact() {
+export default function CompanyRegistration() {
   return (
-    <div className="contactus">
+    <div className="companyregistrationpage">
       <Navbar />
       <div className="companyregistrationbg">
         <div className="taxadvisoryheader">
@@ -89,11 +89,10 @@ export default function Contact() {
           requirements, and filing with the CRO.
         </p>
       </div>
-      <div className="contactusmainbody">
-        <div className="contactformbodybg">
-          <ContactForm mail={"startup@avvadvisors.com"} />
-        </div>
+      <div className="homecontactbg">
+        <ContactForm mail={"startup@avvaadvisors.com"} />
       </div>
+
       <Footer />
     </div>
   );

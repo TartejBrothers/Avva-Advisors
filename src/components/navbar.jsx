@@ -120,6 +120,12 @@ export default function Navbar() {
             Company Registration
           </li>
           <li onClick={() => navigate("/pricing")}>Pricing</li>
+          <li onClick={() => navigate("/agentic-ai")}>
+            Agentic AI for Tax Agents
+          </li>
+          <li onClick={() => navigate("/software-development")}>
+            Software Development
+          </li>
           <li>
             <button onClick={() => navigate("/contact")}>Contact Us</button>
           </li>
@@ -212,6 +218,12 @@ export default function Navbar() {
               Company Registration
             </li>
             <li onClick={() => navigate("/pricing")}>Pricing</li>
+            <li onClick={() => navigate("/agentic-ai")}>
+              Agentic AI for Tax Agents
+            </li>
+            <li onClick={() => navigate("/software-development")}>
+              Software Development
+            </li>
             <li>
               <button onClick={() => navigate("/contact")}>Contact Us</button>
             </li>

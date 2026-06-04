@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/home.css";
 
 import Navbar from "../components/navbar";
-import WhyUsImage from "../images/whyus.jpeg";
+import WhyUsImage from "../images/whyus.jpg";
 import TestimonialCard from "../components/testimonialcard";
 import ContactForm from "../components/contactform";
 import Footer from "../components/footer";
