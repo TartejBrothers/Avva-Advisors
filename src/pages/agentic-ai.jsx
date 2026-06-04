@@ -11,6 +11,14 @@ import { FaFileSignature } from "react-icons/fa";
 import { GrDocumentConfig } from "react-icons/gr";
 import { FaNetworkWired } from "react-icons/fa";
 import { GiGiftOfKnowledge } from "react-icons/gi";
+import {
+  MdPerson,
+  MdAccountBalance,
+  MdBook,
+  MdTrendingUp,
+  MdPayments,
+  MdBusinessCenter,
+} from "react-icons/md";
 export default function AgenticAI() {
   const checkboxPoints = [
     "Understand client requests",
@@ -20,6 +28,62 @@ export default function AgenticAI() {
     "Interact with business systems",
     "Escalate complex cases to human advisors",
     "Learn from organisational knowledge bases",
+  ];
+  const benefits = [
+    {
+      header: "Increased Productivity",
+      subheader:
+        "Allow staff to focus on advisory work while AI handles repetitive administrative activities.",
+    },
+    {
+      header: "Improved Client Experience",
+      subheader: "Deliver faster responses and better service availability.",
+    },
+    {
+      header: "Reduced Administrative Burden",
+      subheader: "Automate routine tasks and minimise manual intervention.",
+    },
+    {
+      header: "Scalable Growth",
+      subheader:
+        "Serve more clients without proportionally increasing headcount.",
+    },
+    {
+      header: "Better Compliance",
+      subheader:
+        "Implement standardised workflows and document collection procedures.",
+    },
+  ];
+  const targetBusinesses = [
+    {
+      name: "Sole Practitioner Tax Agents",
+      icon: MdPerson,
+    },
+
+    {
+      name: "Accountancy Firms",
+      icon: MdAccountBalance,
+    },
+
+    {
+      name: "Bookkeeping Businesses",
+      icon: MdBook,
+    },
+
+    {
+      name: "Financial Advisory Firms",
+      icon: MdTrendingUp,
+    },
+
+    {
+      name: "Payroll Service Providers",
+      icon: MdPayments,
+    },
+
+    {
+      name: "Corporate Service Providers",
+      icon: MdBusinessCenter,
+    },
   ];
   return (
     <div className="agentic-ai-page">
@@ -131,8 +195,39 @@ export default function AgenticAI() {
         </div>
       </div>
       <div className="taxadvisorybody">
-        <h1>Benefits for Tax Practices</h1>
-        <h3>Increased Productivity</h3>
+        <h1 className="text-center">Benefits for Tax Practices</h1>
+        {benefits.map((benefit, index) => (
+          <div className="single-points" key={index}>
+            <h3>{benefit.header}</h3>
+            <h3 className="desktop-only">-</h3>
+            <p>{benefit.subheader}</p>
+          </div>
+        ))}
+      </div>
+      <div className="homegraybg py-[60px]">
+        <h1 className="homeheadertext">Suitable For</h1>
+        <div className="suitable-list">
+          {targetBusinesses.map((business, index) => (
+            <div className="suitable-icon-div" key={index}>
+              <div className="suitable-icon">
+                <business.icon />
+              </div>
+              <h5>{business.name}</h5>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="taxadvisorybody">
+        <h1 className="text-center">Why Avva Advisors?</h1>
+        <p>
+          Our team combines practical tax knowledge with AI implementation
+          expertise, enabling us to build solutions that understand real-world
+          tax and compliance workflows.
+          <br />
+          Whether you are a sole practitioner or a growing accountancy practice,
+          we can develop a customised AI solution tailored to your business
+          needs.
+        </p>
       </div>
       <div className="homecontactbg">
         <ContactForm />
