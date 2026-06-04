@@ -23,19 +23,19 @@ export default function ContactForm({ mail }) {
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        process.env.REACT_APP_EMAILJS_USER_ID
+        process.env.REACT_APP_EMAILJS_USER_ID,
       )
       .then(
         (result) => {
           console.log("Message sent:", result.text);
           alert(
-            "Thanks for contacting us. Our AVVA Advisor will reach out to you."
+            "Thanks for contacting us. Our AVVA Advisor will reach out to you.",
           );
         },
         (error) => {
           console.log("Error:", error.text);
           alert("Failed to send the message. Please try again.");
-        }
+        },
       );
   };
   return (

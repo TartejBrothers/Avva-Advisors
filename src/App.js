@@ -5,6 +5,7 @@ import Contact from "./pages/contact";
 import About from "./pages/about";
 import Pricing from "./pages/pricing";
 import CompanyRegistration from "./pages/companyregistration";
+import AgenticAI from "./pages/agentic-ai";
 import Form11 from "./pages/tax-advisory/form11";
 import Form12 from "./pages/tax-advisory/form12";
 import FinancialAdvisory from "./pages/tax-advisory/financial-advisory";
@@ -35,6 +36,7 @@ function App() {
         <Route path="/financial-advisory" element={<FinancialAdvisory />} />
         <Route path="/pensions-advisory" element={<PensionsAdvisory />} />
         <Route path="/company-registration" element={<CompanyRegistration />} />
+        <Route path="/agentic-ai" element={<AgenticAI />} />
         <Route path="/csep" element={<Csep />} />
         <Route path="/gep" element={<Gep />} />
         <Route path="/stamp-1g" element={<Stamp1g />} />

@@ -1,0 +1,146 @@
+.agentic-ai-bg {
+  background-color: #072b43;
+  padding-bottom: 60px;
+  background-image: url("../images/agentic-ai.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  background-repeat: no-repeat;
+}
+.agentic-ai-bg .taxadvisoryheader {
+  padding: 140px 20px 60px 20px;
+  flex: 1;
+  display: flex;
+}
+.agentic-ai-bg .taxadvisoryheaderleft {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.agentic-ai-bg .taxadvisoryheaderleft h5 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.checkbox-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkbox-point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.checkbox-point svg {
+  color: #012060;
+}
+.agentic-service-card .aboutservicecardicon svg {
+  color: #012060;
+}
+.agentic-service-card .aboutservicecardcontent h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.agentic-service-card .aboutservicecardcontent ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #7d8184;
+}
+.agentic-service-card .aboutservicecardcontent ul li {
+  font-size: 16px;
+  font-weight: 400;
+}
+.single-points {
+  display: flex;
+}
+.single-points h3 {
+  font-size: 18px !important;
+  font-weight: 600;
+  color: #072b43;
+  flex-wrap: nowrap;
+  margin-right: 6px;
+  text-wrap: nowrap;
+}
+.single-points p {
+  font-size: 16px;
+  color: #072b43;
+  margin-left: 6px;
+}
+.suitable-list {
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 20px;
+  width: 100%;
+}
+.suitable-list .suitable-icon-div {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5e8d7;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+}
+.suitable-list .suitable-icon-div .suitable-icon {
+  color: #012060;
+  background-color: #ffffff;
+  padding: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
+.suitable-icon svg {
+  height: 35px;
+  width: 35px;
+}
+.suitable-list .suitable-icon-div h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #072b43;
+}
+@media screen and (max-width: 1000px) {
+  .agentic-ai-bg .taxadvisoryheader {
+    flex-direction: column;
+    padding: 100px 20px 40px 20px;
+  }
+  .agentic-ai-bg .taxadvisoryheaderleft h5 {
+    font-size: 20px;
+  }
+  .desktop-only {
+    display: None;
+  }
+  .single-points {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .single-points h3 {
+    margin-right: 0;
+    text-align: center;
+  }
+  .single-points p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
