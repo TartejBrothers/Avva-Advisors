@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Pricing from "./pages/pricing";
 import CompanyRegistration from "./pages/companyregistration";
 import AgenticAI from "./pages/agentic-ai";
+import SoftwareDevelopment from "./pages/software-development";
 import Form11 from "./pages/tax-advisory/form11";
 import Form12 from "./pages/tax-advisory/form12";
 import FinancialAdvisory from "./pages/tax-advisory/financial-advisory";
@@ -49,6 +50,7 @@ function App() {
         <Route path="/citizenship-by-birth" element={<CitizenshipBirth />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/terms-of-service" element={<Terms />} />
+        <Route path="/software-development" element={<SoftwareDevelopment />} />
       </Routes>
     </Router>
   );

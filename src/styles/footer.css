@@ -133,4 +133,12 @@
   .footerbottomright button {
     width: 100%;
   }
+  .openablediv {
+    justify-content: center;
+  }
+  .submenu li {
+    display: flex;
+
+    justify-content: center;
+  }
 }

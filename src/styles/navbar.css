@@ -285,7 +285,7 @@
 .animatedtextreplacement.animate .replacementtext {
   transform: translateY(0px);
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
   .navbarright {
     display: none;
   }

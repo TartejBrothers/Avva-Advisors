@@ -33,6 +33,12 @@ export default function Footer() {
           <ul>
             <li onClick={() => navigate("/")}>Home</li>
             <li onClick={() => navigate("/about")}>About</li>
+            <li onClick={() => navigate("/agentic-ai")}>
+              Agentic AI for Tax Agents
+            </li>
+            <li onClick={() => navigate("/software-development")}>
+              Software Development
+            </li>
             <li onClick={() => toggleSubMenu("tax-advisory")}>
               <div className="openablediv">
                 Tax Advisory
@@ -145,7 +151,7 @@ export default function Footer() {
       </div>
       <div className="footerbottom">
         <div className="footerbottomcontent">
-          <p>© 2024 All Rights Reserved</p>
+          <p>© {new Date().getFullYear()} All Rights Reserved</p>
           <div className="footerbottomright">
             <ul>
               <li onClick={() => navigate("/privacy-policy")}>
