@@ -48,7 +48,7 @@ export default function FeeCard() {
           </tr>
           <tr>
             <td>CSEP / General Employment Permit Filing</td>
-            <td>€400</td>
+            <td>€500/€750</td>
           </tr>
           <tr>
             <td>
