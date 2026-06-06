@@ -69,6 +69,12 @@ export default function Navbar() {
         <ul>
           <li onClick={() => navigate("/")}>Home</li>
           <li onClick={() => navigate("/about")}>About</li>
+          <li onClick={() => navigate("/agentic-ai")}>
+            Agentic AI for Tax Agents
+          </li>
+          <li onClick={() => navigate("/software-development")}>
+            Software Development
+          </li>
           <li>
             <div className="openablediv">
               Tax Advisory <IoIosArrowDown />
@@ -81,6 +87,9 @@ export default function Navbar() {
               </li>{" "}
               <li onClick={() => navigate("/pensions-advisory")}>
                 Pensions Advisory
+              </li>
+              <li onClick={() => navigate("/company-registration")}>
+                Company Registration
               </li>
             </ul>
           </li>
@@ -116,16 +125,9 @@ export default function Navbar() {
               </li>
             </ul>
           </li>
-          <li onClick={() => navigate("/company-registration")}>
-            Company Registration
-          </li>
+
           <li onClick={() => navigate("/pricing")}>Pricing</li>
-          <li onClick={() => navigate("/agentic-ai")}>
-            Agentic AI for Tax Agents
-          </li>
-          <li onClick={() => navigate("/software-development")}>
-            Software Development
-          </li>
+
           <li>
             <button onClick={() => navigate("/contact")}>Contact Us</button>
           </li>
@@ -147,6 +149,13 @@ export default function Navbar() {
           <ul>
             <li onClick={() => navigate("/")}>Home</li>
             <li onClick={() => navigate("/about")}>About</li>
+
+            <li onClick={() => navigate("/agentic-ai")}>
+              Agentic AI for Tax Agents
+            </li>
+            <li onClick={() => navigate("/software-development")}>
+              Software Development
+            </li>
             <li onClick={() => toggleSubMenu("tax-advisory")}>
               <div className="openablediv">
                 Tax Advisory
@@ -162,6 +171,9 @@ export default function Navbar() {
                   <li onClick={() => navigate("/form12")}>Form 12</li>
                   <li onClick={() => navigate("/financial-advisory")}>
                     Financial Advisory
+                  </li>
+                  <li onClick={() => navigate("/company-registration")}>
+                    Company Registration
                   </li>
                 </ul>
               )}
@@ -214,16 +226,9 @@ export default function Navbar() {
                 </ul>
               )}
             </li>
-            <li onClick={() => navigate("/company-registration")}>
-              Company Registration
-            </li>
+
             <li onClick={() => navigate("/pricing")}>Pricing</li>
-            <li onClick={() => navigate("/agentic-ai")}>
-              Agentic AI for Tax Agents
-            </li>
-            <li onClick={() => navigate("/software-development")}>
-              Software Development
-            </li>
+
             <li>
               <button onClick={() => navigate("/contact")}>Contact Us</button>
             </li>
